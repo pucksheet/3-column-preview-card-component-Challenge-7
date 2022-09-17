@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Big Shoulders Display', cursive;
+    padding: 3rem;
+    width: 100%;
+}
+
+
+
+.container {
+    max-width: 900px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+
+
+.bg1 {
+    background-color: hsl(31, 77%, 52%);
+    padding: 3rem;
+
+}
+
+.bg2 {
+    background-color: hsl(184, 100%, 22%);
+    padding: 3rem;
+}
+
+.bg3 {
+    background-color: hsl(179, 100%, 13%);
+    padding: 3rem;
+}
+
+.car {
+    padding: 50px;
+}
+
+
+h1 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 900;
+    margin: 20px 0;
+
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    padding: 13px 40px;
+    border-radius: 30px;
+    display: inline-block;
+    margin-top: 80px;
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    transition: .5s ease-in-out;
+}
+
+.bg1 a {
+    color: hsl(31, 77%, 52%);
+}
+
+.bg2 a {
+    color: hsl(184, 100%, 22%);
+}
+
+.bg3 a {
+    color: hsl(179, 100%, 13%);
+}
+
+
+
+
+
+
+.bg1 a:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: #fff;
+}
+
+.bg2 a:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: #fff;
+}
+
+.bg3 a:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: #fff;
+}
+
+
+@media screen and (max-width: 600px) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width: 320px) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+
+    a {
+        padding: 10px 20px;
+        margin-top: 50px;
+    }
+
+}
